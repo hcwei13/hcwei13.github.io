@@ -1,12 +1,3 @@
-# hcwei13.github.io
+This source code is borrowd from Jon Barron's public academic website.
 
-## update
-
-- git add --all
-- git commit -m "update"
-- git push -u origin main
-- if Couldn't connect to server
-  - git config --global http.proxy ""
-  - git add --all
-  - git commit -m "commit"
-  - git push -u origin main
+This is the source code to Jon Barron's public academic website: https://jonbarron.info/. You are welcome to clone this code for your own personal use, just please attribute the source to the original website or to this repo. If you do clone this website, feel free to add an attribution link to your own downstream website in index.html if you want.
