@@ -162,6 +162,54 @@ name {
   line-height: 1.1;
 }
 
+.language-switch {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px 0;
+}
+
+.lang-button {
+  min-width: 42px;
+  height: 28px;
+  border: 1px solid var(--rule);
+  border-radius: 0;
+  background: rgba(255, 255, 255, .58);
+  color: var(--muted);
+  cursor: pointer;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.lang-button + .lang-button {
+  margin-left: -1px;
+}
+
+.lang-button:first-child {
+  border-radius: 6px 0 0 6px;
+}
+
+.lang-button:last-child {
+  border-radius: 0 6px 6px 0;
+}
+
+.lang-button:hover,
+.lang-button:focus {
+  border-color: #aebbb1;
+  color: var(--link);
+  position: relative;
+  z-index: 1;
+}
+
+.lang-button.is-active {
+  border-color: #7d9ab1;
+  background: #e9f0f5;
+  color: #173f61;
+  position: relative;
+  z-index: 2;
+}
+
 .profile-links {
   display: flex;
   flex-wrap: wrap;
@@ -266,6 +314,11 @@ span.highlight {
 
   heading {
     font-size: 20px;
+  }
+
+  .language-switch {
+    justify-content: center;
+    padding: 8px 16px 0;
   }
 
   .profile-photo {

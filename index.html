@@ -16,6 +16,10 @@
   <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <tr style="padding:0px">
       <td style="padding:0px">
+        <div class="language-switch" aria-label="Language switch">
+          <button type="button" class="lang-button is-active" data-lang-button="en" aria-pressed="true">EN</button>
+          <button type="button" class="lang-button" data-lang-button="zh" aria-pressed="false">中文</button>
+        </div>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tbody>
             <tr style="padding:0px">
@@ -23,18 +27,18 @@
                 <p style="text-align:center">
                   <name>Hongchen Wei</name> 
                 </p>
-                <p>I am currently a final-year Ph.D. student at the School of Remote Sensing and Information Engineering, Wuhan University, under the supervision of <a href="http://iip.whu.edu.cn/~zzchen/">Prof. Zhenzhong Chen</a>.
-				<p>I received my M.E. degree in School of Computer Science and Engineering from Nanjing University of Science and Technology, China, in 2023.
-				<p>I received my B.Sc. degree in School of Materials Science and Engineering from Xi'an Shiyou University, China, in 2020.
+                <p data-i18n-html="bio_current">I am currently a final-year Ph.D. student at Wuhan University, under the supervision of <a href="http://iip.whu.edu.cn/~zzchen/">Prof. Zhenzhong Chen</a>.</p>
+				<p data-i18n="bio_master">I received my M.E. degree from Nanjing University of Science and Technology, China, in 2023.</p>
+				<p data-i18n="bio_bachelor">I received my B.Sc. degree from Xi'an Shiyou University, China, in 2020.</p>
                 <br>
 
                 <p class="profile-links" style="text-align:center">
-                  <a href="mailto:hc_wei@whu.edu.cn">Email</a>
+                  <a href="mailto:hc_wei@whu.edu.cn" data-i18n="link_email">Email</a>
                   <a href="https://scholar.google.com/citations?user=CCQ3YsEAAAAJ&hl=en">Google Scholar</a>
                   <!-- <a href="https://twitter.com/zhang_yuanhan">Twitter</a> &nbsp/&nbsp -->
                   <a href="https://github.com/hcwei13">Github</a>
-                  <a href="weihc_files/pdfs/CV_en.pdf">CV (EN)</a>
-                  <a href="weihc_files/pdfs/CV_zh.pdf">CV (ZH)</a>
+                  <a href="weihc_files/pdfs/CV_en.pdf" data-i18n="link_cv_en">CV (EN)</a>
+                  <a href="weihc_files/pdfs/CV_zh.pdf" data-i18n="link_cv_zh">CV (ZH)</a>
                 </p>
               </td>
               <td style="padding:2.5%;width:40%;max-width:40%">
@@ -47,19 +51,19 @@
 		<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody></tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Main Research Interests</heading>
+              <heading data-i18n="heading_interests">Main Research Interests</heading>
             </td>
           </tr>
         </tbody></table>
 
-        <p style="padding:0 20px;">
+        <p style="padding:0 20px;" data-i18n-html="research_intro">
           My current research focuses on building <strong>executable virtual environments</strong> inspired by generative agents, which simulate real-world interaction dynamics for dynamic evaluation, synthetic data generation, and RL-based post-training. I also work on agentic multimodal understanding, especially tool-augmented long-document and long-video agents, as well as multimodal model merging for aligning perception and reasoning capabilities and enabling cross-modal knowledge transfer.
         </p>
 
         <ul>
-          <li><strong>Executable generative-agent environments</strong> for dynamic evaluation, synthetic data generation, and Agentic RL</li>
-          <li>Tool-augmented multimodal agents for long-document and long-video understanding</li>
-          <li>Multimodal model merging for perception-reasoning alignment and cross-modal knowledge transfer</li>
+          <li data-i18n-html="interest_env"><strong>Executable generative-agent environments</strong> for dynamic evaluation, synthetic data generation, and Agentic RL</li>
+          <li data-i18n="interest_agents">Tool-augmented multimodal agents for long-document and long-video understanding</li>
+          <li data-i18n="interest_merge">Multimodal model merging for perception-reasoning alignment and cross-modal knowledge transfer</li>
         </ul>
 
         <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -81,7 +85,7 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
           <td style="padding:20px;width:100%;vertical-align:middle">
-            <heading>Pre-prints</heading>
+            <heading data-i18n="heading_preprints">Pre-prints</heading>
           </td>
         </tr>
       </tbody></table>
@@ -99,9 +103,9 @@
             <br>
             <strong>Hongchen Wei</strong>, et al.
             <br>
-            <em>NeurIPS 2026 (under review)</em>
+            <em data-i18n="status_neurips_review">NeurIPS 2026 (under review)</em>
             <br>
-            Work done at MSRA.
+            <span data-i18n="work_msra">Work done at MSRA.</span>
           </td>
         </tr>
 
@@ -116,9 +120,9 @@
             <br>
             <strong>Hongchen Wei</strong>, et al.
             <br>
-            <em>NeurIPS 2026 (under review)</em>
+            <em data-i18n="status_neurips_review">NeurIPS 2026 (under review)</em>
             <br>
-            Work done at MSRA.
+            <span data-i18n="work_msra">Work done at MSRA.</span>
           </td>
         </tr>
 
@@ -133,7 +137,7 @@
             <br>
             <strong>Hongchen Wei</strong>, Zhenzhong Chen.
             <br>
-            <em>NeurIPS 2026 (under review)</em>
+            <em data-i18n="status_neurips_review">NeurIPS 2026 (under review)</em>
             <br>
           </td>
         </tr>
@@ -152,7 +156,7 @@
             <!-- <strong>Hongchen Wei</strong>, Zhenzhong Chen -->
             <strong>Hongchen Wei</strong>, Zhenzhong Chen
             <br>
-            <em>arXiv Preprint</em>, 2025
+            <em data-i18n="status_arxiv">arXiv Preprint</em>, 2025
             <br>
             <!-- <a href='https://hcwei13.github.io/Visual-Context-Window-Extension/' target='_blank'>Project page</a>  -->
             <!-- <a href='https://huggingface.co/collections/lmms-lab/llava-next-video-661e86f5e8dabc3ff793c944' target='_blank'>Model</a> / -->
@@ -178,7 +182,7 @@
             <!-- <strong>Hongchen Wei</strong>, Zhenzhong Chen -->
             <strong>Hongchen Wei</strong>, Zhihong Tan, Yaosi Hu, Chang Wen Chen, Zhenzhong Chen
             <br>
-            <em>arXiv Preprint</em>, 2025
+            <em data-i18n="status_arxiv">arXiv Preprint</em>, 2025
             <br>
             <!-- <a href='https://hcwei13.github.io/Visual-Context-Window-Extension/' target='_blank'>Project page</a>  -->
             <!-- <a href='https://huggingface.co/collections/lmms-lab/llava-next-video-661e86f5e8dabc3ff793c944' target='_blank'>Model</a> / -->
@@ -205,7 +209,7 @@
             <!-- <strong>Hongchen Wei</strong>, Zhenzhong Chen -->
             Zhihan Zhang, Xiang Pan, <strong>Hongchen Wei</strong>, Zhenzhong Chen
             <br>
-            <em>arXiv Preprint</em>, 2025
+            <em data-i18n="status_arxiv">arXiv Preprint</em>, 2025
             <br>
             <!-- <a href='https://hcwei13.github.io/Visual-Context-Window-Extension/' target='_blank'>Project page</a>  -->
             <!-- <a href='https://huggingface.co/collections/lmms-lab/llava-next-video-661e86f5e8dabc3ff793c944' target='_blank'>Model</a> / -->
@@ -231,7 +235,7 @@
             <!-- <strong>Hongchen Wei</strong>, Zhenzhong Chen -->
             Zhihong Tan, Jiayi Wang, Huiying Shi, Binyuan Huang, <strong>Hongchen Wei</strong>, Zhenzhong Chen
             <br>
-            <em>arXiv Preprint</em>, 2025
+            <em data-i18n="status_arxiv">arXiv Preprint</em>, 2025
             <br>
             <!-- <a href='https://hcwei13.github.io/Visual-Context-Window-Extension/' target='_blank'>Project page</a>  -->
             <!-- <a href='https://huggingface.co/collections/lmms-lab/llava-next-video-661e86f5e8dabc3ff793c944' target='_blank'>Model</a> / -->
@@ -252,9 +256,9 @@
           <td style="padding:20px;width:55%;vertical-align:middle">
             <papertitle>TDSAgent: A Task-Driven Sampling Agent for Long Video Question Answering</papertitle>
             <br>
-            Author list includes <strong>Hongchen Wei</strong>
+            <span data-i18n-html="author_includes">Author list includes <strong>Hongchen Wei</strong></span>
             <br>
-            <em>Under Review</em>, 2026
+            <em data-i18n="status_under_review">Under Review</em>, 2026
             <br>
           </td>
         </tr>
@@ -270,9 +274,9 @@
           <td style="padding:20px;width:55%;vertical-align:middle">
             <papertitle>GTC: Game-Theoretic Token Compression for Video Large Language Models</papertitle>
             <br>
-            Author list includes <strong>Hongchen Wei</strong>
+            <span data-i18n-html="author_includes">Author list includes <strong>Hongchen Wei</strong></span>
             <br>
-            <em>Under Review</em>, 2026
+            <em data-i18n="status_under_review">Under Review</em>, 2026
             <br>
           </td>
         </tr>
@@ -290,9 +294,9 @@
             <papertitle>ETC: Extreme Token Compression via Task-aware Visual Information Distillation in VLMs</papertitle>
             </a>
             <br>
-            Author list includes <strong>Hongchen Wei</strong>
+            <span data-i18n-html="author_includes">Author list includes <strong>Hongchen Wei</strong></span>
             <br>
-            <em>Under Review</em>, 2026
+            <em data-i18n="status_under_review">Under Review</em>, 2026
             <br>
           </td>
         </tr>
@@ -301,7 +305,7 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Publications</heading>
+              <heading data-i18n="heading_publications">Publications</heading>
             </td>
           </tr>
         </tbody></table>
@@ -319,7 +323,7 @@
               <papertitle>See What We Cannot See: A Geo-guided Reasoning Benchmark for Object Counting under Adverse Earth Observation Conditions</papertitle>
             </a>
             <br>
-            Author list includes <strong>Hongchen Wei</strong>
+            <span data-i18n-html="author_includes">Author list includes <strong>Hongchen Wei</strong></span>
             <br>
             <em>CVPR</em>, 2026
             <br>
@@ -341,9 +345,9 @@
             <br>
             <strong>Hongchen Wei</strong>, Zhenzhong Chen
             <br>
-            <em>ACM MM (CCF-A 会议)</em>, 2025
+            <em data-i18n="venue_acmmm_ccfa">ACM MM (CCF-A Conference)</em>, 2025
             <br>
-            <a href='https://hcwei13.github.io/Visual-Context-Window-Extension/' target='_blank'>Project page</a> 
+            <a href='https://hcwei13.github.io/Visual-Context-Window-Extension/' target='_blank' data-i18n="project_page">Project page</a> 
             <!-- <a href='https://huggingface.co/collections/lmms-lab/llava-next-video-661e86f5e8dabc3ff793c944' target='_blank'>Model</a> / -->
             <!-- <a href='https://github.com/LLaVA-VL/LLaVA-NeXT' target='_blank'>Code</a>  -->
             <!-- <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/LLaVA-VL/LLaVA-NeXT?style=social">  -->
@@ -366,7 +370,7 @@
             <br>
             <strong>Hongchen Wei</strong>, Zhenzhong Chen
             <br>
-            <em>ACM MM (CCF-A 会议)</em>, 2025
+            <em data-i18n="venue_acmmm_ccfa">ACM MM (CCF-A Conference)</em>, 2025
             <br>
             <!-- <a href='https://hcwei13.github.io/Visual-Context-Window-Extension/' target='_blank'>Project page</a>  -->
             <!-- <a href='https://huggingface.co/collections/lmms-lab/llava-next-video-661e86f5e8dabc3ff793c944' target='_blank'>Model</a> / -->
@@ -392,7 +396,7 @@
             <!-- <strong>Hongchen Wei</strong>, Zhenzhong Chen -->
             Huiying Shi, Zhihong Tan, Zhihan Zhang, <strong>Hongchen Wei</strong>, Yaosi Hu, Yingxue Zhang, Zhenzhong Chen
             <br>
-            <em>TGRS (CCF-B 期刊)</em>, 2025
+            <em data-i18n="venue_tgrs_ccfb">TGRS (CCF-B Journal)</em>, 2025
             <br>
             <!-- <a href='https://hcwei13.github.io/Visual-Context-Window-Extension/' target='_blank'>Project page</a>  -->
             <!-- <a href='https://huggingface.co/collections/lmms-lab/llava-next-video-661e86f5e8dabc3ff793c944' target='_blank'>Model</a> / -->
@@ -417,7 +421,7 @@
               <br>
               <strong>Hongchen Wei</strong>, Zhenzhong Chen
               <br>
-              <em>TOMM (CCF-B 期刊)</em>, 2024
+              <em data-i18n="venue_tomm_ccfb">TOMM (CCF-B Journal)</em>, 2024
               <br>
               <!-- <a href="https://arxiv.org/abs/2203.07845">PDF</a> / 
               <a href="https://opengvlab.shlab.org.cn/bamboo/home">Project Page</a> / 
@@ -445,9 +449,9 @@
               <br>
 			  Yang Yang, <strong> Hongchen Wei </strong>, Hengshu Zhu, Dianhai Yu, Hui Xiong, Jian Yang
               <br>
-              <em>TCYB (CCF-B 期刊)</em>, 2022 (学生一作)
+              <em data-i18n="venue_tcyb_ccfb">TCYB (CCF-B Journal)</em>, 2022 <span data-i18n="student_first_author">(student first author)</span>
               <br>
-              <a href="https://github.com/njustkmg/TCYB22_CPRC">Code</a> 
+              <a href="https://github.com/njustkmg/TCYB22_CPRC" data-i18n="code_link">Code</a> 
             </td>
           </tr> 
 
@@ -466,7 +470,7 @@
 				<br>
 				Yang Yang, <strong> Hongchen Wei </strong>, Zhenqiang Sun, Guangyu Li, Yuanchun Zhou, Hui Xiong, Jian Yang
 				<br>
-				<em>TKDD (CCF-B 期刊)</em>, 2021 (学生一作)
+				<em data-i18n="venue_tkdd_ccfb">TKDD (CCF-B Journal)</em>, 2021 <span data-i18n="student_first_author">(student first author)</span>
 				<br>
 				<!-- <a href="https://github.com/njustkmg/TCYB22_CPRC">Code</a>  -->
 			  </td>
@@ -478,14 +482,14 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
           <td style="padding:20px;width:100%;vertical-align:middle">
-            <heading>Activities</heading>
+            <heading data-i18n="heading_activities">Activities</heading>
           </td>
           </tr>
         </tbody></table>
 
         <ul>
           <li>
-            Reviewer: ICLR25 26, CVPR25 26, NeurIPS 25 26, ICML 26, TNNLS
+            <span data-i18n="reviewer">Reviewer: ICLR25/26, CVPR25/26, NeurIPS25/26, ICML26, TNNLS</span>
           </li>
 
           <!-- <li>
@@ -519,10 +523,10 @@
             <td style="padding:0px">
               <br>
               <p style="text-align:right;font-size:small;">
-                Last updated in Jun. 2026. </a>
+                <span data-i18n="last_updated">Last updated in Jun. 2026.</span> </a>
               </p>
               <p style="text-align:right;font-size:small;">
-                Homepage credits: <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron.</a>
+                <span data-i18n="credits_prefix">Homepage credits:</span> <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron.</a>
               </p>
             </td>
           </tr>
@@ -531,6 +535,96 @@
       </td>
     </tr>
   </table>
+  <script>
+    const zhTranslations = {
+      bio_current: '我目前是武汉大学博士研究生，导师为 <a href="http://iip.whu.edu.cn/~zzchen/">陈震中教授</a>。',
+      bio_master: '我于 2023 年在南京理工大学获得硕士学位。',
+      bio_bachelor: '我于 2020 年在西安石油大学获得学士学位。',
+      link_email: '邮箱',
+      link_cv_en: '英文简历',
+      link_cv_zh: '中文简历',
+      heading_interests: '主要研究方向',
+      research_intro: '我近期的研究重点是构建受生成式智能体启发的 <strong>可执行虚拟环境</strong>，通过模拟真实世界交互动态，实现动态评估、合成数据生成与基于强化学习的后训练。同时，我也关注 agentic 多模态理解，尤其是工具增强的长文档/长视频 Agent，以及用于感知—推理能力对齐和跨模态知识迁移的多模态模型合并。',
+      interest_env: '<strong>可执行生成式智能体环境</strong>：用于动态评估、合成数据生成与 Agentic RL',
+      interest_agents: '工具增强的长文档与长视频多模态 Agent',
+      interest_merge: '多模态模型合并、感知—推理对齐与跨模态知识迁移',
+      heading_preprints: '预印本',
+      heading_publications: '已发表论文',
+      heading_activities: '学术服务',
+      status_neurips_review: 'NeurIPS 2026（在审）',
+      status_arxiv: 'arXiv 预印本',
+      status_under_review: '在审',
+      work_msra: '工作完成于 MSRA。',
+      author_includes: '作者列表包含 <strong>Hongchen Wei</strong>',
+      project_page: '项目主页',
+      code_link: '代码',
+      venue_acmmm_ccfa: 'ACM MM（CCF-A 会议）',
+      venue_tgrs_ccfb: 'TGRS（CCF-B 期刊）',
+      venue_tomm_ccfb: 'TOMM（CCF-B 期刊）',
+      venue_tcyb_ccfb: 'TCYB（CCF-B 期刊）',
+      venue_tkdd_ccfb: 'TKDD（CCF-B 期刊）',
+      student_first_author: '（学生一作）',
+      reviewer: '审稿人：ICLR 25/26、CVPR 25/26、NeurIPS 25/26、ICML 26、TNNLS',
+      last_updated: '最后更新于 2026 年 6 月。',
+      credits_prefix: '主页模板鸣谢：'
+    };
+
+    function getSavedLanguage() {
+      try {
+        return localStorage.getItem('homepage-language');
+      } catch (error) {
+        return null;
+      }
+    }
+
+    function saveLanguage(lang) {
+      try {
+        localStorage.setItem('homepage-language', lang);
+      } catch (error) {
+        // Language switching should still work when local storage is unavailable.
+      }
+    }
+
+    const defaultText = new Map();
+    const defaultHtml = new Map();
+
+    document.querySelectorAll('[data-i18n]').forEach((el) => {
+      defaultText.set(el, el.textContent);
+    });
+
+    document.querySelectorAll('[data-i18n-html]').forEach((el) => {
+      defaultHtml.set(el, el.innerHTML);
+    });
+
+    function setLanguage(lang) {
+      const useZh = lang === 'zh';
+      document.documentElement.lang = useZh ? 'zh-CN' : 'en';
+
+      document.querySelectorAll('[data-i18n]').forEach((el) => {
+        const key = el.getAttribute('data-i18n');
+        el.textContent = useZh && zhTranslations[key] ? zhTranslations[key] : defaultText.get(el);
+      });
+
+      document.querySelectorAll('[data-i18n-html]').forEach((el) => {
+        const key = el.getAttribute('data-i18n-html');
+        el.innerHTML = useZh && zhTranslations[key] ? zhTranslations[key] : defaultHtml.get(el);
+      });
+
+      document.querySelectorAll('[data-lang-button]').forEach((button) => {
+        const active = button.getAttribute('data-lang-button') === lang;
+        button.classList.toggle('is-active', active);
+        button.setAttribute('aria-pressed', active ? 'true' : 'false');
+      });
+
+      saveLanguage(lang);
+    }
+
+    document.querySelectorAll('[data-lang-button]').forEach((button) => {
+      button.addEventListener('click', () => setLanguage(button.getAttribute('data-lang-button')));
+    });
+
+    setLanguage(getSavedLanguage() || 'en');
+  </script>
 </body>
 
 </html>
