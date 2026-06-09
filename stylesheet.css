@@ -63,69 +63,228 @@
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
   }
   
-  a {
-    color: #1772d0;
-    text-decoration: none;
+:root {
+  --bg: #fbfaf6;
+  --ink: #202124;
+  --muted: #5f6872;
+  --rule: #d9ded8;
+  --link: #165f9f;
+  --link-hover: #8a4b12;
+  --surface: #ffffff;
+  --surface-soft: #f3f6f1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+body,
+td,
+th,
+tr,
+p,
+a,
+li {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+body > table {
+  padding: 26px 20px 48px;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 22px;
+  padding-left: 42px;
+}
+
+li {
+  margin: 5px 0;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+  transition: color .16s ease, border-color .16s ease, background-color .16s ease;
+}
+
+a:focus,
+a:hover {
+  color: var(--link-hover);
+  text-decoration: none;
+}
+
+strong {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #111827;
+}
+
+heading {
+  display: block;
+  color: #1f2933;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0;
+  padding-bottom: 7px;
+  border-bottom: 1px solid var(--rule);
+}
+
+papertitle {
+  color: #111827;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+name {
+  display: block;
+  color: #15181c;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.1;
+}
+
+.profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.profile-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  padding: 0 10px;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, .62);
+  color: #224f79;
+  font-size: 13px;
+  line-height: 1;
+}
+
+.profile-links a:focus,
+.profile-links a:hover {
+  border-color: #aebbb1;
+  background: var(--surface);
+  color: var(--link-hover);
+}
+
+.profile-photo {
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+  border: 1px solid var(--rule);
+  background: var(--surface);
+}
+
+.one {
+  width: 100%;
+  max-width: 320px;
+  min-height: 132px;
+  position: relative;
+}
+
+.one img {
+  display: block;
+  width: 100% !important;
+  max-width: 100%;
+  height: auto !important;
+  max-height: 184px;
+  object-fit: contain;
+  border: 1px solid var(--rule);
+  border-radius: 7px;
+  background: var(--surface);
+}
+
+.two {
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
+}
+
+.fade {
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
+}
+
+span.highlight {
+  background-color: #ffffd0;
+}
+
+@media (max-width: 720px) {
+  body > table {
+    padding: 16px 12px 34px;
   }
-  
-  a:focus,
-  a:hover {
-    color: #f09228;
-    text-decoration: none;
-  }
-  
-  body,
-  td,
-  th,
+
+  body > table,
+  body > table > tbody,
+  body > table > tbody > tr,
+  body > table > tbody > tr > td,
+  table,
+  tbody,
   tr,
-  p,
-  a {
-    font-family: 'Lato', Verdana, Helvetica, sans-serif;
-    font-size: 14px
+  td {
+    display: block;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
   }
-  
-  strong {
-    font-family: 'Lato', Verdana, Helvetica, sans-serif;
-    font-size: 14px;
+
+  td {
+    padding: 10px 16px !important;
   }
-  
-  heading {
-    font-family: 'Lato', Verdana, Helvetica, sans-serif;
-    font-size: 22px;
-  }
-  
-  papertitle {
-    font-family: 'Lato', Verdana, Helvetica, sans-serif;
-    font-size: 14px;
-    font-weight: 700
-  }
-  
+
   name {
-    font-family: 'Lato', Verdana, Helvetica, sans-serif;
-    font-size: 32px;
+    font-size: 30px;
+    text-align: center;
   }
-  
+
+  heading {
+    font-size: 20px;
+  }
+
+  .profile-photo {
+    width: 164px !important;
+    max-width: 164px !important;
+    margin-top: 8px;
+  }
+
   .one {
-    width: 160px;
-    height: 160px;
-    position: relative;
+    max-width: none;
+    min-height: 0;
   }
-  
-  .two {
-    width: 160px;
-    height: 160px;
-    position: absolute;
-    transition: opacity .2s ease-in-out;
-    -moz-transition: opacity .2s ease-in-out;
-    -webkit-transition: opacity .2s ease-in-out;
+
+  .one img {
+    max-height: none;
   }
-  
-  .fade {
-    transition: opacity .2s ease-in-out;
-    -moz-transition: opacity .2s ease-in-out;
-    -webkit-transition: opacity .2s ease-in-out;
+
+  ul {
+    padding-left: 34px;
+    padding-right: 14px;
   }
-  
-  span.highlight {
-    background-color: #ffffd0;
-  }
+}

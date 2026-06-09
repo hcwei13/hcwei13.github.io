@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 280">
+  <rect width="640" height="280" fill="#f7f9fb"/>
+  <rect x="36" y="36" width="568" height="208" rx="10" fill="#fff" stroke="#d8dee6" stroke-width="2"/>
+  <text x="56" y="74" fill="#27364a" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700">TDSAgent</text>
+  <text x="56" y="104" fill="#64707f" font-family="Arial, Helvetica, sans-serif" font-size="17">Task-driven sampling for long video QA</text>
+  <rect x="78" y="144" width="112" height="48" rx="8" fill="#e8f2ff" stroke="#8ab7ef"/>
+  <rect x="264" y="144" width="112" height="48" rx="8" fill="#fff7df" stroke="#e2bc61"/>
+  <rect x="450" y="144" width="112" height="48" rx="8" fill="#e8f5ed" stroke="#8fc8a5"/>
+  <path d="M196 168 H258 M382 168 H444" stroke="#8491a0" stroke-width="4" stroke-linecap="round"/>
+  <polygon points="256,160 270,168 256,176" fill="#8491a0"/>
+  <polygon points="442,160 456,168 442,176" fill="#8491a0"/>
+  <text x="110" y="174" fill="#254d7a" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700">Query</text>
+  <text x="289" y="174" fill="#87631b" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700">Sample</text>
+  <text x="488" y="174" fill="#2f6d45" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700">Answer</text>
+</svg>
