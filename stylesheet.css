@@ -115,6 +115,10 @@ li {
   margin: 5px 0;
 }
 
+.news-list {
+  margin-bottom: 8px;
+}
+
 a {
   color: var(--link);
   text-decoration: none;
