@@ -5,6 +5,10 @@
   
   <meta name="author" content="Hongchen Wei">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Hongchen Wei researches executable agent environments, agentic multimodal understanding, dynamic evaluation, data synthesis, and RL-based post-training.">
+  <meta property="og:title" content="Hongchen Wei">
+  <meta property="og:description" content="Executable agent environments, agentic multimodal understanding, and RL-based post-training.">
+  <meta property="og:type" content="website">
   
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
 	<!-- <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>"> -->
@@ -34,7 +38,8 @@
 
                 <p class="profile-links" style="text-align:center">
                   <a href="mailto:hc_wei@whu.edu.cn" data-i18n="link_email">Email</a>
-                  <a href="https://scholar.google.com/citations?user=CCQ3YsEAAAAJ&hl=en">Google Scholar</a>
+                  <a href="https://scholar.google.com/citations?user=CCQ3YsEAAAAJ&amp;hl=en">Google Scholar</a>
+                  <a class="profile-link-featured" href="https://officeintelligence.github.io/" target="_blank" rel="noopener noreferrer" data-i18n="link_office_intelligence">Office Intelligence</a>
                   <!-- <a href="https://twitter.com/zhang_yuanhan">Twitter</a> &nbsp/&nbsp -->
                   <a href="https://github.com/hcwei13">Github</a>
                   <a href="weihc_files/pdfs/CV_en.pdf" data-i18n="link_cv_en">CV (EN)</a>
@@ -48,23 +53,42 @@
           </tbody>
         </table>
 
-		<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody></tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading data-i18n="heading_interests">Main Research Interests</heading>
-            </td>
-          </tr>
-        </tbody></table>
+        <section class="research-focus" aria-labelledby="research-heading">
+          <heading id="research-heading" data-i18n="heading_interests">Research agenda</heading>
 
-        <p style="padding:0 20px;" data-i18n-html="research_intro">
-          My current research focuses on building <strong>executable virtual environments</strong> inspired by generative agents, which simulate real-world interaction dynamics for dynamic evaluation, synthetic data generation, and RL-based post-training. I also work on agentic multimodal understanding, especially tool-augmented long-document and long-video agents, as well as multimodal model merging for aligning perception and reasoning capabilities and enabling cross-modal knowledge transfer. These efforts are developed under <a href="https://officeintelligence.github.io/" target="_blank">Office Intelligence</a>, a project hub for our recent work on agentic document intelligence.
-        </p>
+          <p class="research-lead" data-i18n-html="research_intro">
+            I build <strong>executable environments where agents work inside persistent virtual organizations</strong>: they assume roles, use real tools, coordinate under permissions, and act across long-running events. My goal is to close the loop between agent evaluation, trajectory and data synthesis, and RL-based post-training.
+          </p>
 
-        <ul>
-          <li data-i18n-html="interest_env"><strong>Executable generative-agent environments</strong> for dynamic evaluation, synthetic data generation, and Agentic RL</li>
-          <li data-i18n="interest_agents">Tool-augmented multimodal agents for long-document and long-video understanding</li>
-          <li data-i18n="interest_merge">Multimodal model merging for perception-reasoning alignment and cross-modal knowledge transfer</li>
-        </ul>
+          <a class="office-hub" href="https://officeintelligence.github.io/" target="_blank" rel="noopener noreferrer">
+            <span class="office-hub-copy">
+              <span class="office-hub-heading">
+                <strong class="office-hub-title">Office Intelligence</strong>
+                <span class="office-hub-label" data-i18n="office_hub_label">Core research hub</span>
+              </span>
+              <span class="office-hub-description" data-i18n="office_hub_description">A research hub for agents that work: executable office environments, document intelligence, and post-training.</span>
+            </span>
+            <span class="office-hub-action">
+              <span data-i18n="office_hub_action">Visit the research hub</span>
+              <span aria-hidden="true">&#8599;</span>
+            </span>
+          </a>
+
+          <div class="research-line" aria-label="Research areas">
+            <span class="research-line-item research-line-primary">
+              <strong data-i18n="interest_env_title">Executable agent environments</strong>
+              <span data-i18n="interest_env_meta">Organizations · Tools · Evals · Data · RL</span>
+            </span>
+            <span class="research-line-item">
+              <strong data-i18n="interest_agents_title">Agentic multimodal understanding</strong>
+              <span data-i18n="interest_agents_meta">Long documents · Long videos</span>
+            </span>
+            <span class="research-line-item">
+              <strong data-i18n="interest_merge_title">Perception-reasoning alignment</strong>
+              <span data-i18n="interest_merge_meta">Model merging · Cross-modal transfer</span>
+            </span>
+          </div>
+        </section>
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
@@ -523,7 +547,7 @@
             <td style="padding:0px">
               <br>
               <p style="text-align:right;font-size:small;">
-                <span data-i18n="last_updated">Last updated in Jun. 2026.</span> </a>
+                <span data-i18n="last_updated">Last updated in Aug. 2026.</span> </a>
               </p>
               <p style="text-align:right;font-size:small;">
                 <span data-i18n="credits_prefix">Homepage credits:</span> <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron.</a>
@@ -543,13 +567,20 @@
       link_email: '邮箱',
       link_cv_en: '英文简历',
       link_cv_zh: '中文简历',
-      heading_interests: '主要研究方向',
-      research_intro: '我近期的研究重点是构建受生成式智能体启发的 <strong>可执行虚拟环境</strong>，通过模拟真实世界交互动态，实现动态评估、合成数据生成与基于强化学习的后训练。同时，我也关注 agentic 多模态理解，尤其是工具增强的长文档/长视频 Agent，以及用于感知—推理能力对齐和跨模态知识迁移的多模态模型合并。这些工作汇聚于 <a href="https://officeintelligence.github.io/" target="_blank">Office Intelligence</a> 项目，展示我们近期在智能体文档理解方面的工作。',
-      interest_env: '<strong>可执行生成式智能体环境</strong>：用于动态评估、合成数据生成与 Agentic RL',
-      interest_agents: '工具增强的长文档与长视频多模态 Agent',
-      interest_merge: '多模态模型合并、感知—推理对齐与跨模态知识迁移',
+      link_office_intelligence: 'Office Intelligence',
+      heading_interests: '研究主线',
+      research_intro: '我致力于构建<strong>让 Agent 在持久虚拟组织中真实工作的可执行环境</strong>：智能体承担组织角色、调用真实工具、在权限边界下协作，并持续参与长程事件。研究目标是打通 Agent 动态评测、轨迹与数据合成及 RL 后训练的闭环。',
+      office_hub_label: '核心研究平台',
+      office_hub_description: '让 Agent 真正工作的研究平台：可执行办公环境、文档智能与后训练。',
+      office_hub_action: '访问研究主页',
+      interest_env_title: '可执行 Agent 环境',
+      interest_env_meta: '组织 · 工具 · 评测 · 数据 · RL',
+      interest_agents_title: 'Agentic 多模态理解',
+      interest_agents_meta: '长文档 · 长视频',
+      interest_merge_title: '感知—推理对齐',
+      interest_merge_meta: '模型合并 · 跨模态迁移',
       heading_news: '动态',
-      news_msra: '[2025 年 12 月至今] 我在 Microsoft Research Asia (MSRA) 担任研究实习生，working on 面向真实办公工作流的可执行多智能体环境、Agentic Document Understanding、Agent 评估与数据合成。',
+      news_msra: '[2025 年 12 月至今] 我在 Microsoft Research Asia (MSRA) 担任研究实习生，研究面向真实办公工作流的可执行多智能体环境、Agentic Document Understanding、Agent 评测与数据合成。',
       heading_preprints: '预印本',
       heading_publications: '已发表论文',
       heading_activities: '学术服务',
@@ -567,7 +598,7 @@
       venue_tkdd_ccfb: 'TKDD（CCF-B 期刊）',
       student_first_author: '（学生一作）',
       reviewer: '审稿人：ICLR 25/26、CVPR 25/26、NeurIPS 25/26、ICML 26、TNNLS',
-      last_updated: '最后更新于 2026 年 6 月。',
+      last_updated: '最后更新于 2026 年 8 月。',
       credits_prefix: '主页模板鸣谢：'
     };
 
