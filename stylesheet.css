@@ -49,7 +49,10 @@ a:hover {
   text-decoration: underline;
   text-underline-offset: 3px;
 }
-.profile-copy > p:not(.profile-links) a {
+.profile-copy > p:not(.profile-links) a,
+.news-list a,
+.experience-list a,
+.paper-authors a {
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;

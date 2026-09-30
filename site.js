@@ -163,6 +163,13 @@
             author,
           );
           authorName.dataset.author = author;
+          if (author === "Bei Liu") {
+            const profile = element("a", "", author);
+            profile.href = "https://bei21.github.io/";
+            profile.target = "_blank";
+            profile.rel = "noopener";
+            authorName.replaceChildren(profile);
+          }
           if (paper.equalContributors?.includes(author)) {
             const mark = element("sup", "author-mark");
             const abbreviation = element("abbr", "", "*");
