@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <title>Hongchen Wei - smiling H</title>
+  <rect x="2" y="2" width="60" height="60" rx="15" fill="#1769ae"/>
+  <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M19 17v30M45 17v30M19 32h26" stroke-width="6"/>
+    <path d="M27 24q2-3 4 0" stroke-width="2.5"/>
+    <path d="M27 40q5 6 11 0" stroke-width="2.5"/>
+  </g>
+  <circle cx="37" cy="23" r="1.8" fill="#fff"/>
+  <circle cx="52" cy="12" r="4" fill="#f2aa72"/>
+</svg>
