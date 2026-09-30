@@ -454,7 +454,7 @@ window.homepageChinese = {
   bioResearch:
     '我主要研究<strong>面向专业工作的通用智能体</strong>，关注生成式环境、数据合成、后训练与评测。近期工作包括面向组织模拟的 <a href="#paper-officetown"><strong>OfficeTown</strong></a>、面向文档交互的 <a href="#paper-docatlas">DocAtlas</a>，以及面向证据级评测的 <a href="#paper-xl-docbench">XL-DocBench</a>。',
   careerNote:
-    '我预计于 <strong>2027 年 6 月</strong>博士毕业，正在寻找<strong class="career-focus">智能体方向的全职研究岗位</strong>，欢迎<a href="mailto:hc_wei@whu.edu.cn">联系交流</a>相关机会。',
+    '我预计于 <strong>2027 年 6 月</strong>博士毕业，正在寻找<strong class="career-focus">智能体方向的全职研究岗位</strong>。欢迎就相关研究交流、合作或工作机会<a href="mailto:hc_wei@whu.edu.cn">与我联系</a>。',
   newsHeading: "动态",
   newsOfficeTown:
     '<span class="news-emoji" aria-hidden="true">🏢</span>完成 <strong>OfficeTown</strong>：通过<strong>持续组织模拟</strong>生成专业工作数据与环境，支持<strong>通用智能体训练与评测</strong><span class="news-note">（论文暂未公开）</span>。',
