@@ -11,10 +11,10 @@
   const list = document.querySelector("#paper-list");
   const linkNames = {
     en: {
-      paper: "paper",
-      project: "project",
-      code: "code",
-      dataset: "dataset",
+      paper: "Paper",
+      project: "Project",
+      code: "Code",
+      dataset: "Dataset",
     },
     zh: {
       paper: "阅读论文",
@@ -88,7 +88,7 @@
             : "Accepted / published, non-first-author contributions",
       },
     ];
-    groups.forEach((group) => {
+    groups.forEach((group, index) => {
       const count = results.filter(
         (paper) => publicationGroup(paper) === group.id,
       ).length;
@@ -97,7 +97,14 @@
       section.id = `publications-${group.id}`;
       section.dataset.group = group.id;
       const header = element("div", "publication-group-heading");
-      const heading = element("h3", "", group.title);
+      const heading = element("h3");
+      const letter = element(
+        "span",
+        "group-index",
+        String.fromCharCode(65 + index),
+      );
+      letter.setAttribute("aria-hidden", "true");
+      heading.append(letter, element("span", "group-title", group.title));
       heading.id = `${section.id}-title`;
       section.setAttribute("aria-labelledby", heading.id);
       header.append(
@@ -224,7 +231,12 @@
             language === "zh" ? "学生第一作者" : "Student first author",
           ),
         );
-      content.append(meta);
+      content.prepend(meta);
+      if (display.description) {
+        content.append(
+          element("p", "paper-description", display.description[language]),
+        );
+      }
       const actions = element("div", "paper-actions");
       Object.entries(paper.links).forEach(([type, url]) => {
         const anchor = element("a", "", linkNames[language][type]);
@@ -236,19 +248,16 @@
           "aria-label",
           `${linkNames[language][type]}: ${paper.title}`,
         );
+        anchor.append(icon("arrow-up-right"));
         actions.append(anchor);
       });
       if (actions.childElementCount) content.append(actions);
-      if (display.description) {
-        content.append(
-          element("p", "paper-description", display.description[language]),
-        );
-      }
       row.append(content);
       groupedContainers.get(publicationGroup(paper)).append(row);
     });
     list.replaceChildren(fragment);
     document.querySelector("#paper-empty").hidden = results.length !== 0;
+    document.querySelector("#clear-search").hidden = search.value.length === 0;
     document.querySelector("#paper-count").textContent =
       language === "zh"
         ? `${results.length} / ${papers.length} 篇`
@@ -278,6 +287,22 @@
     copy.title = language === "zh" ? "复制邮箱" : "Copy email";
     copy.setAttribute("aria-label", copy.title);
     document.querySelector("#copy-status").textContent = "";
+    const labels = {
+      "#clear-search": language === "zh" ? "清除搜索" : "Clear search",
+      "#close-dialog": language === "zh" ? "关闭大图" : "Close enlarged figure",
+      ".back-to-top": language === "zh" ? "回到顶部" : "Back to top",
+      ".site-mark":
+        language === "zh" ? "魏红陈，回到顶部" : "Hongchen Wei, back to top",
+      ".profile-photo":
+        language === "zh"
+          ? "查看魏红陈的照片"
+          : "View Hongchen Wei's photograph",
+    };
+    Object.entries(labels).forEach(([selector, label]) => {
+      const control = document.querySelector(selector);
+      control.title = label;
+      control.setAttribute("aria-label", label);
+    });
     try {
       localStorage.setItem("homepage-language", language);
     } catch {
@@ -293,11 +318,17 @@
   search.addEventListener("input", () => {
     renderPapers();
   });
-  document.querySelector("#reset-search").addEventListener("click", () => {
+  function resetSearch() {
     search.value = "";
     renderPapers();
     search.focus();
-  });
+  }
+  document
+    .querySelector("#reset-search")
+    .addEventListener("click", resetSearch);
+  document
+    .querySelector("#clear-search")
+    .addEventListener("click", resetSearch);
 
   const dialog = document.querySelector("#image-dialog");
   let dialogTrigger = null;

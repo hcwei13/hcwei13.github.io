@@ -446,10 +446,9 @@ window.homepageChinese = {
   skip: "跳至正文",
   navPapers: "论文",
   navExperience: "经历",
+  portraitRole: "博士研究生 / 研究实习生",
   bioPhd:
-    '我目前是<a href="https://www.whu.edu.cn/" target="_blank" rel="noopener">武汉大学</a>博士研究生，导师为 IIP 实验室的<a href="https://zhenzhong-chen.github.io/" target="_blank" rel="noopener">陈震中教授</a>。',
-  bioMSRA:
-    '同时，我在<a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/" target="_blank" rel="noopener">微软亚洲研究院</a> Visual Computing Group 担任研究实习生，与 <a href="https://bei21.github.io/" target="_blank" rel="noopener">Dr. Bei Liu</a> 合作，研究面向专业工作的智能体环境与学习。',
+    '我目前是<a href="https://www.whu.edu.cn/" target="_blank" rel="noopener">武汉大学</a>博士研究生，导师为 IIP 实验室的<a href="https://zhenzhong-chen.github.io/" target="_blank" rel="noopener">陈震中教授</a>。同时，我在<a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/" target="_blank" rel="noopener">微软亚洲研究院</a> Visual Computing Group 担任研究实习生，与 <a href="https://bei21.github.io/" target="_blank" rel="noopener">Dr. Bei Liu</a> 合作，研究面向专业工作的智能体环境与学习。',
   email: "邮箱",
   bioResearch:
     '我主要研究<strong>面向专业工作的通用智能体</strong>，关注生成式环境、数据合成、后训练与评测。近期工作包括面向组织模拟的 <a href="#paper-officetown"><strong>OfficeTown</strong></a>、面向文档交互的 <a href="#paper-docatlas">DocAtlas</a>，以及面向证据级评测的 <a href="#paper-xl-docbench">XL-DocBench</a>。',
@@ -489,6 +488,6 @@ window.homepageChinese = {
     "担任 ICLR 2025/26、CVPR 2025/26、NeurIPS 2025/26、ICML 2026 和 TNNLS 审稿人。",
   contactHeading: "联系",
   bilingual: "中英文合并版简历",
-  updated: "更新于 2026 年 9 月",
+  updated: "更新于 2026 年 10 月",
   inspiredBy: "主页参考",
 };

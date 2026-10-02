@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" shape-rendering="crispEdges">
+  <title>Pixel cat drawing template</title>
+  <rect x="4" y="28" width="26" height="2" fill="#e4e9e6"/>
+  <g id="pet-tail">
+    <g fill="#344843">
+      <rect x="22" y="24" width="6" height="4"/>
+      <rect x="26" y="16" width="4" height="10"/>
+      <rect x="28" y="12" width="2" height="6"/>
+    </g>
+    <g fill="#91a6a0">
+      <rect x="24" y="24" width="4" height="2"/>
+      <rect x="28" y="18" width="2" height="6"/>
+    </g>
+  </g>
+  <g fill="#344843">
+    <rect x="8" y="18" width="16" height="10"/>
+    <rect x="6" y="24" width="18" height="4"/>
+  </g>
+  <g fill="#91a6a0">
+    <rect x="10" y="20" width="12" height="6"/>
+    <rect x="8" y="24" width="4" height="2"/>
+  </g>
+  <g fill="#f5f7f4">
+    <rect x="12" y="20" width="6" height="6"/>
+    <rect x="8" y="26" width="6" height="2"/>
+    <rect x="18" y="26" width="4" height="2"/>
+  </g>
+  <g fill="#344843">
+    <rect x="4" y="4" width="4" height="8"/>
+    <rect x="20" y="4" width="4" height="8"/>
+    <rect x="6" y="8" width="16" height="12"/>
+    <rect x="4" y="10" width="20" height="8"/>
+    <rect x="8" y="18" width="12" height="4"/>
+  </g>
+  <g fill="#91a6a0">
+    <rect x="6" y="6" width="2" height="6"/>
+    <rect x="20" y="6" width="2" height="6"/>
+    <rect x="8" y="10" width="12" height="2"/>
+    <rect x="6" y="12" width="16" height="6"/>
+  </g>
+  <g fill="#f5f7f4">
+    <rect x="10" y="12" width="8" height="8"/>
+    <rect x="8" y="16" width="12" height="2"/>
+  </g>
+  <g fill="#c59292">
+    <rect x="6" y="8" width="2" height="2"/>
+    <rect x="20" y="8" width="2" height="2"/>
+  </g>
+  <g id="pet-eyes" fill="#263d37">
+    <rect x="8" y="12" width="2" height="4"/>
+    <rect x="18" y="12" width="2" height="4"/>
+  </g>
+  <g id="pet-eyes-closed" fill="#263d37" opacity="0">
+    <rect x="8" y="14" width="2" height="2"/>
+    <rect x="18" y="14" width="2" height="2"/>
+  </g>
+  <rect x="13" y="16" width="2" height="2" fill="#806e71"/>
+  <g fill="#1769ae">
+    <rect x="10" y="20" width="10" height="2"/>
+    <rect x="18" y="22" width="2" height="2"/>
+  </g>
+</svg>

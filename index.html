@@ -22,30 +22,34 @@
     <title>Hongchen Wei</title>
     <link
       rel="icon"
-      href="assets/favicon-32.png?v=20260930"
+      href="assets/favicon-32.png?v=20261002-cats"
       sizes="32x32"
       type="image/png"
     />
     <link
       rel="icon"
-      href="assets/favicon.svg?v=20260930"
+      href="assets/favicon.svg?v=20261002-cats"
       type="image/svg+xml"
     />
     <link
       rel="apple-touch-icon"
-      href="assets/apple-touch-icon.png?v=20260930"
+      href="assets/apple-touch-icon.png?v=20261002-cats"
     />
-    <link rel="stylesheet" href="stylesheet.css?v=20260930-mentor" />
+    <link rel="stylesheet" href="stylesheet.css?v=20261002-type" />
     <script src="assets/vendor/lucide.min.js" defer></script>
-    <script src="research-data.js?v=20260930-mentor" defer></script>
-    <script src="site.js?v=20260930-mentor" defer></script>
+    <script src="research-data.js?v=20261002-bio" defer></script>
+    <script src="site.js?v=20261002-editorial" defer></script>
   </head>
   <body id="top">
     <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
     <header class="page-toolbar page-width">
+      <a class="site-mark" href="#top" aria-label="Hongchen Wei, back to top">
+        <img src="assets/pixel-cats.svg" alt="" width="64" height="36" />
+      </a>
       <nav class="primary-nav" aria-label="Page navigation">
-        <a href="#publications" data-i18n="navPapers">Publications</a>
+        <a href="#publications" data-i18n="navPapers">Papers</a>
         <a href="#experience" data-i18n="navExperience">Experience</a>
+        <a href="#contact" data-i18n="contactHeading">Contact</a>
       </nav>
       <div class="language-control" role="group" aria-label="Language">
         <button type="button" data-language="en" aria-pressed="true">EN</button>
@@ -59,7 +63,10 @@
     <main class="page-width" id="main">
       <section class="profile" aria-labelledby="name">
         <div class="profile-copy">
-          <h1 id="name">Hongchen Wei <span lang="zh">魏红陈</span></h1>
+          <h1 id="name">
+            Hongchen Wei<span class="name-period" aria-hidden="true">.</span>
+            <span lang="zh">魏红陈</span>
+          </h1>
           <p data-i18n="bioPhd">
             I am a Ph.D. student at
             <a href="https://www.whu.edu.cn/" target="_blank" rel="noopener"
@@ -71,10 +78,8 @@
               rel="noopener"
               >Prof. Zhenzhong Chen</a
             >
-            in the IIP Lab.
-          </p>
-          <p data-i18n="bioMSRA">
-            I am also a research intern in the Visual Computing Group at
+            in the IIP Lab. I am also a research intern in the Visual Computing
+            Group at
             <a
               href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/"
               target="_blank"
@@ -136,25 +141,36 @@
             ></i
           ></a>
         </div>
-        <a
-          class="profile-photo"
-          href="images/whc.png"
-          target="_blank"
-          rel="noopener"
-          aria-label="View Hongchen Wei's photograph"
-        >
-          <img
-            src="assets/photos/profile-original.webp"
-            alt="Hongchen Wei"
-            width="960"
-            height="640"
-            fetchpriority="high"
-          />
-        </a>
+        <figure class="profile-aside">
+          <a
+            class="profile-photo"
+            href="images/whc.png"
+            target="_blank"
+            rel="noopener"
+            aria-label="View Hongchen Wei's photograph"
+          >
+            <img
+              src="assets/photos/profile-original.webp"
+              alt="Hongchen Wei"
+              width="960"
+              height="640"
+              fetchpriority="high"
+            />
+          </a>
+          <figcaption class="profile-caption">
+            <span data-i18n="portraitRole"
+              >Ph.D. student &amp; research intern</span
+            >
+            <span>Wuhan University / MSRA</span>
+          </figcaption>
+        </figure>
       </section>
 
       <section class="news-section section" aria-labelledby="news-title">
-        <h2 id="news-title" data-i18n="newsHeading">News</h2>
+        <h2 id="news-title">
+          <span class="section-index" aria-hidden="true">01</span
+          ><span data-i18n="newsHeading">News</span>
+        </h2>
         <ul class="news-list">
           <li>
             <time datetime="2026-09">09/2026</time>
@@ -195,12 +211,19 @@
         aria-labelledby="publications-title"
       >
         <div class="section-heading">
-          <h2 id="publications-title" data-i18n="publications">Publications</h2>
+          <h2 id="publications-title">
+            <span class="section-index" aria-hidden="true">02</span
+            ><span data-i18n="publications">Publications</span>
+          </h2>
           <span class="publication-summary" data-i18n="publicationSummary"
             >18 papers · 11 first-author works (including preprints)</span
           >
         </div>
         <div class="paper-toolbar">
+          <p class="authorship-legend" data-i18n="authorNote">
+            * Equal contribution. Student-first authorship is noted where
+            applicable.
+          </p>
           <div class="paper-search">
             <i data-lucide="search" aria-hidden="true"></i>
             <input
@@ -210,12 +233,18 @@
               aria-label="Search publications"
               autocomplete="off"
             />
+            <button
+              class="search-clear"
+              id="clear-search"
+              type="button"
+              aria-label="Clear search"
+              title="Clear search"
+              hidden
+            >
+              <i data-lucide="x" aria-hidden="true"></i>
+            </button>
           </div>
         </div>
-        <p class="authorship-legend" data-i18n="authorNote">
-          * Equal contribution. Student-first authorship is noted where
-          applicable.
-        </p>
         <div class="paper-list" id="paper-list"></div>
         <div class="empty-state" id="paper-empty" hidden>
           <p data-i18n="noPapers">No matching publications.</p>
@@ -240,8 +269,9 @@
         id="experience"
         aria-labelledby="experience-title"
       >
-        <h2 id="experience-title" data-i18n="experienceHeading">
-          Education &amp; Experience
+        <h2 id="experience-title">
+          <span class="section-index" aria-hidden="true">03</span
+          ><span data-i18n="experienceHeading">Education &amp; Experience</span>
         </h2>
         <ul class="experience-list">
           <li>
@@ -287,47 +317,69 @@
           </li>
         </ul>
       </section>
-      <section class="service-section section" aria-labelledby="service-title">
-        <h2 id="service-title" data-i18n="service">Academic Service</h2>
-        <p data-i18n="reviewer">
-          Reviewer for ICLR 2025/26, CVPR 2025/26, NeurIPS 2025/26, ICML 2026,
-          and TNNLS.
-        </p>
-      </section>
-      <section class="contact-section section" aria-labelledby="contact-title">
-        <h2 id="contact-title" data-i18n="contactHeading">Contact</h2>
-        <div class="contact-actions">
-          <a href="mailto:hc_wei@whu.edu.cn">hc_wei@whu.edu.cn</a>
-          <button
-            class="icon-button"
-            id="copy-email"
-            type="button"
-            title="Copy email"
-            aria-label="Copy email"
-          >
-            <i data-lucide="copy" aria-hidden="true"></i>
-          </button>
-          <span id="copy-status" role="status"></span>
-        </div>
-        <p class="cv-line">
-          <a
-            href="weihc_files/pdfs/CV_bilingual.pdf"
-            target="_blank"
-            rel="noopener"
-            data-i18n="bilingual"
-            >Bilingual CV (Chinese / English)</a
-          >
-        </p>
-      </section>
+      <div class="closing-grid">
+        <section
+          class="service-section section"
+          aria-labelledby="service-title"
+        >
+          <h2 id="service-title">
+            <span class="section-index" aria-hidden="true">04</span
+            ><span data-i18n="service">Academic Service</span>
+          </h2>
+          <p data-i18n="reviewer">
+            Reviewer for ICLR 2025/26, CVPR 2025/26, NeurIPS 2025/26, ICML 2026,
+            and TNNLS.
+          </p>
+        </section>
+        <section
+          class="contact-section section"
+          id="contact"
+          aria-labelledby="contact-title"
+        >
+          <h2 id="contact-title">
+            <span class="section-index" aria-hidden="true">05</span
+            ><span data-i18n="contactHeading">Contact</span>
+          </h2>
+          <div class="contact-actions">
+            <a href="mailto:hc_wei@whu.edu.cn">hc_wei@whu.edu.cn</a>
+            <button
+              class="icon-button"
+              id="copy-email"
+              type="button"
+              title="Copy email"
+              aria-label="Copy email"
+            >
+              <i data-lucide="copy" aria-hidden="true"></i>
+            </button>
+            <span id="copy-status" role="status"></span>
+          </div>
+          <p class="cv-line">
+            <a
+              href="weihc_files/pdfs/CV_bilingual.pdf"
+              target="_blank"
+              rel="noopener"
+              data-i18n="bilingual"
+              >Bilingual CV (Chinese / English)</a
+            >
+          </p>
+        </section>
+      </div>
     </main>
     <footer class="site-footer page-width">
-      <span data-i18n="updated">Updated September 2026</span>
+      <span data-i18n="updated">Updated October 2026</span>
       <span
         ><span data-i18n="inspiredBy">Website inspired by</span>
         <a href="https://jonbarron.info/" target="_blank" rel="noopener"
           >Jon Barron</a
         >.</span
       >
+      <a
+        class="back-to-top"
+        href="#top"
+        aria-label="Back to top"
+        title="Back to top"
+        ><i data-lucide="arrow-up" aria-hidden="true"></i
+      ></a>
     </footer>
     <dialog
       class="image-dialog"
