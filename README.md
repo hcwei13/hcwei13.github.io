@@ -24,6 +24,9 @@ and index labels; venues, resource links, captions, and the footer use the body
 family for a quieter, consistent reading rhythm. A shared 15/14/13/12/11px scale
 organizes desktop text, with a 14/13/12/11px mobile scale and 16px search inputs.
 English and Chinese share sizes but have language-specific paragraph leading.
+The profile uses tighter 1.6 English / 1.7 Chinese leading, with aligned paragraph
+edges and a shared baseline for the English and Chinese names. Career information
+retains its blue emphasis without a separate left indent.
 The original proportional portrait and research interests remain within the biography;
 papers are shown as a compact thumbnail-based list.
 The desktop reading column is capped at 840px. Profile columns have a 32px gap;
