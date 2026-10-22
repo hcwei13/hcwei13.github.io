@@ -11,7 +11,9 @@ backend. Open `index.html` directly, or serve this directory with a static serve
 - `site.js`: language selection, publication search, figure dialog,
   publication anchors, and email copying.
 - `assets/`: optimized copies of original photographs and research figures.
-- `weihc_files/pdfs/`: final Chinese, English, and bilingual CV downloads.
+- `weihc_files/pdfs/Hongchen_Wei_CV_en.pdf`: the current, author-supplied CV download.
+  Despite its filename, this PDF contains the Chinese CV; the site labels it simply
+  **CV / 简历**, with no separate English or bilingual download.
 
 ## Content
 
@@ -53,8 +55,11 @@ and Co-Authored Publications (5 accepted/published non-first-author works).
 Search applies to all sections and omits empty sections from its results.
 
 - OfficeTown: organizational simulation resources for benchmarking, SFT, and OPD.
-  Labeled **Preprint**, with no paper download. Only the requested Figure 1 image crop is included;
-  the source PDF, submission header, and paper text are not copied into this repository.
+  Released on arXiv in October 2026, with the public author list and links to
+  [the paper](https://arxiv.org/abs/2610.23194) and
+  [the project homepage](https://officeintelligence.github.io/).
+  It remains in the Preprints section. The Figure 1 crop is hosted locally;
+  the paper is linked externally rather than copied into this repository.
 - DocAtlas and XL-DocBench: NeurIPS 2026.
   Both use the full, author-supplied author lists. Hongchen Wei and Yuanzhe Wang
   are marked with superscript asterisks denoting equal contribution.
@@ -72,9 +77,11 @@ Search applies to all sections and omits empty sections from its results.
   animated header; `assets/favicon.svg` and the PNG fallbacks are static.
   Regenerate them with `python3 tools/render_pixel_cats.py` (requires Pillow).
 
-To update the final CV, replace `CV_en.pdf` and `CV_zh.pdf` with the approved
-originals and rebuild `CV_bilingual.pdf` by appending Chinese pages before English.
-Do not re-typeset the original PDFs when updating the website.
+To update the CV, copy the approved `Final_Resume/Hongchen_Wei_CV_en.pdf` from the
+workspace to `weihc_files/pdfs/Hongchen_Wei_CV_en.pdf` without modifying its contents.
+The profile, contact section, and no-JavaScript fallback all link to this file.
+The old `CV_en.pdf`, `CV_zh.pdf`, and `CV_bilingual.pdf` downloads have been retired.
+Do not re-typeset the original PDF when updating the website.
 
 ## Credits
 

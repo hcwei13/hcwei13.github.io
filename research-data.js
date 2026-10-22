@@ -9,11 +9,28 @@ window.researchPapers = [
     firstAuthor: true,
     title:
       "OfficeTown: Generative Organizations for Evolving Agent Intelligence",
-    authors: ["Hongchen Wei", "et al."],
-    venue: "Preprint",
+    authors: [
+      "Hongchen Wei",
+      "Daohong Ying",
+      "Zhi Hong",
+      "Aidan Wu",
+      "Bei Liu",
+      "Ruichun Ma",
+      "Yifan Yang",
+      "Qi Dai",
+      "Kai Qiu",
+      "Rui Xu",
+      "Dongdong Chen",
+      "Zhenzhong Chen",
+      "Chong Luo",
+    ],
+    venue: "arXiv",
     note: "msra",
     keywords: "组织 环境 智能体 data synthesis professional work",
-    links: { project: "https://officeintelligence.github.io/" },
+    links: {
+      paper: "https://arxiv.org/abs/2610.23194",
+      project: "https://officeintelligence.github.io/",
+    },
   },
   {
     id: "docatlas",
@@ -456,7 +473,7 @@ window.homepageChinese = {
     '我预计于 <strong>2027 年 6 月</strong>博士毕业，正在寻找<strong class="career-focus">智能体方向的全职研究岗位</strong>。欢迎就相关研究交流、合作或工作机会<a href="mailto:hc_wei@whu.edu.cn">与我联系</a>。',
   newsHeading: "动态",
   newsOfficeTown:
-    '<span class="news-emoji" aria-hidden="true">🏢</span>完成 <strong>OfficeTown</strong>：通过<strong>持续组织模拟</strong>生成专业工作数据与环境，支持<strong>通用智能体训练与评测</strong><span class="news-note">（论文暂未公开）</span>。',
+    '<span class="news-emoji" aria-hidden="true">🏢</span><a href="https://officeintelligence.github.io/" target="_blank" rel="noopener"><strong>OfficeTown</strong></a> 已发布至 <a href="https://arxiv.org/abs/2610.23194" target="_blank" rel="noopener">arXiv</a>：通过<strong>持续组织模拟</strong>生成专业工作数据与环境，支持<strong>通用智能体训练与评测</strong>。',
   newsAccepted:
     '<span class="news-emoji" aria-hidden="true">🎉</span><strong>DocAtlas</strong> 与 <strong>XL-DocBench</strong> 已被 <strong class="news-venue">NeurIPS 2026</strong> 录用。',
   newsIntern:
@@ -487,7 +504,7 @@ window.homepageChinese = {
   reviewer:
     "担任 ICLR 2025/26、CVPR 2025/26、NeurIPS 2025/26、ICML 2026 和 TNNLS 审稿人。",
   contactHeading: "联系",
-  bilingual: "中英文合并版简历",
+  cv: "简历",
   updated: "更新于 2026 年 10 月",
   inspiredBy: "主页参考",
 };
